@@ -13,7 +13,6 @@ class LinkedList {
 	             if(fast == null){
 	                System.out.println("fast is null");
 	            }
-	           
 	            fast = fast.next;
 	            count++;
 	        }
@@ -45,7 +44,7 @@ class LinkedList {
     { 
         while (tnode != null) 
         { 
-            System.out.print(tnode.val+" "); 
+            System.out.print(tnode.data+" "); 
             tnode = tnode.next; 
         } 
     }
@@ -66,7 +65,7 @@ public class LinkedListApplication {
 
         llist.printList(llist.head); 
   
-        Node node= llist.removeNthFromEnd(llist.head , 2); // Delete node at position 4 
+        Node node= llist.removeNthFromEnd(llist.head , 5); // Delete node at position 4 
         System.out.println();
         llist.printList(llist.head); 
    

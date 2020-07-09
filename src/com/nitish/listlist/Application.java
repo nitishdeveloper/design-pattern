@@ -6,7 +6,7 @@ class ReverseLinkedList {
 	// prints content of double linked list
 	void printList(Node node) {
 		while (node != null) {
-			System.out.print(node.val + " ");
+			System.out.print(node.data + " ");
 			node = node.next;
 		}
 	}
@@ -137,8 +137,8 @@ class ReverseLinkedList {
 		while (nodeA != null && nodeB != null) {
 			nodeA = nodeA.next;
 			nodeB = nodeB.next;
-			System.out.println("nodeA : "+nodeA.val+" nodeB : "+nodeB.val);
-			if (nodeA.val == nodeB.val) {
+			System.out.println("nodeA : "+nodeA.data+" nodeB : "+nodeB.data);
+			if (nodeA.data == nodeB.data) {
 				 return currA;
 			}
 			nodeA = nodeA.next;
