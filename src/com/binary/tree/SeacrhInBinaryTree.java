@@ -6,7 +6,6 @@ import java.util.Queue;
 public class SeacrhInBinaryTree {
 
 	public static void main(String[] args) {
-		Node root = new Node(15);
 //		searchUsingRecurrsion(root, 17);
 		searchNode(Node.tree(), 17);
 	}
