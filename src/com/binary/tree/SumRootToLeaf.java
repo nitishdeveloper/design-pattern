@@ -7,7 +7,7 @@ import java.util.Stack;
 
 public class SumRootToLeaf {
 	public static void main(String[] args) {
-
+		pintRootToLeaf(Node.tree2());
 	}
 
 	public static void pintRootToLeaf(Node root) {
@@ -18,7 +18,6 @@ public class SumRootToLeaf {
 		stack.push(root);
 		
 		HashMap<Node,Node> map = new HashMap<>(); 
-		
 		map.put(root,null);  
 		
 		while(!stack.isEmpty()) {
@@ -44,24 +43,25 @@ public class SumRootToLeaf {
 	public static void print(Node rooToleaf , Node leafToRoot ,HashMap<Node,Node> map) {
 		 Stack<Node> stack=new Stack<>();
 		 List<Integer> list = new ArrayList<Integer>();
-		 List<Integer> list2 = new ArrayList<Integer>();
+//		 List<Integer> list2 = new ArrayList<Integer>();
 	
 		 while(rooToleaf != null) {
 			 stack.add(rooToleaf);
 			 rooToleaf = map.get(rooToleaf);
 		 }
-		 while(map.get(leafToRoot) != null) {
-			   list2.add(leafToRoot.data);
-			   leafToRoot = map.get(leafToRoot);
-		 }
-		 list2.add(leafToRoot.data);
+		 
+		/*
+		 * while(map.get(leafToRoot) != null) { list2.add(leafToRoot.data); leafToRoot =
+		 * map.get(leafToRoot); }
+		 */
+//		 list2.add(leafToRoot.data);
 		 
 		 while(!stack.isEmpty()) {
 			 list.add(stack.pop().data);
 		 }
 		 
 		 
-		 System.out.println(list + " | "+list2);
+		 System.out.println(list);
 	}
 	
 }
