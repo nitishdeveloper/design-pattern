@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import binary.tree.depth.Node;
+import btree.depth.Node;
 
 public class TreeDiameterImpl implements TreeDiameter {
 

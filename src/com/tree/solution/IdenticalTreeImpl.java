@@ -1,6 +1,6 @@
 package com.tree.solution;
 
-import binary.tree.depth.Node;
+import btree.depth.Node;
 
 public class IdenticalTreeImpl implements IdenticalTree {
 

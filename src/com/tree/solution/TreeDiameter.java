@@ -1,6 +1,6 @@
 package com.tree.solution;
 
-import binary.tree.depth.Node;
+import btree.depth.Node;
 
 public interface TreeDiameter {
 	public int diameter(Node root);
